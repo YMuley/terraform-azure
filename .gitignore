@@ -1,0 +1,5 @@
+.terraform.lock.hcl
+.terraform/environment
+.terraform/terraform.tfstate
+.terraform/modules/modules.json
+.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.75.0/windows_386/terraform-provider-azurerm_v3.75.0_x5.exe
