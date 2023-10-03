@@ -7,12 +7,12 @@
 #   }
 # }
 
-terraform {
-  cloud {
-    organization = "motifworks"
+# terraform {
+#   cloud {
+#     organization = "motifworks"
 
-    workspaces {
-      name = "terraform-azurerm-resource_group"
-    }
-  }
-}
+#     workspaces {
+#       name = "terraform-azurerm-resource_group"
+#     }
+#   }
+# }
