@@ -19,4 +19,5 @@ provider "azurerm" {
   client_secret = var.client_secret
   tenant_id = var.tenant_id
   #storage_use_azuread = true
+  skip_provider_registration = true
 }
