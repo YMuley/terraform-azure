@@ -12,7 +12,7 @@
 #     organization = "motifworks"
 
 #     workspaces {
-#       name = "terraform-azurerm-resource_group"
+#       name = "terraform-azure-iac"
 #     }
 #   }
 # }
