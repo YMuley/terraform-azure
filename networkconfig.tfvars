@@ -14,7 +14,7 @@ virtual_network_list = [
     {
         name        = "vnet-tb-dev-poc"
         location    = "eastus"
-        resource_group_name = "rg-saurabh-test"
+        resource_group_name = "rg-saurabh-poc"
         address_space = ["10.100.0.0/16"] //["172.21.0.0/16"]
         dns_server = [] //["172.21.1.40", "172.21.1.41"]
         tags = {
