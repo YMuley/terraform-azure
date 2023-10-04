@@ -5,10 +5,10 @@ terraform {
       version = ">=3.75.0"
     }
   }
-  azuread = {
-      source  = "hashicorp/azuread"
-      version = ">=2.45.0"
-    }
+  # azuread = {
+  #     source  = "hashicorp/azuread"
+  #     version = ">=2.45.0"
+  #   }
 }
 
 provider "azurerm" {
@@ -19,11 +19,15 @@ provider "azurerm" {
     }
   #storage_use_azuread = true
   skip_provider_registration = true
+  ARM_SUBSCRIPTION_ID = var.ARM_SUBSCRIPTION_ID
+  ARM_CLIENT_ID = var.ARM_CLIENT_ID
+  ARM_CLIENT_SECRET = var.ARM_CLIENT_SECRET
+  ARM_TENANT_ID = var.ARM_TENANT_ID
 }
 
-provider "azuread" {
-  subscription_id = var.subscription_id
-  client_id = var.client_id
-  client_secret = var.client_secret
-  tenant_id = var.tenant_id
-}
+# provider "azuread" {
+#   ARM_SUBSCRIPTION_ID = var.ARM_SUBSCRIPTION_ID
+#   ARM_CLIENT_ID = var.ARM_CLIENT_ID
+#   ARM_CLIENT_SECRET = var.ARM_CLIENT_SECRET
+#   ARM_TENANT_ID = var.ARM_TENANT_ID
+# }
